@@ -1,0 +1,91 @@
+/* ==========
+Allgemein
+========== */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-size: 62.5%;
+	background-image: url(https://images.unsplash.com/photo-1580582932707-520aed937b7b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 3rem;
+	height: 100vh;
+	color: var(--secondary-color);
+	font-family: "Gochi Hand";
+}
+:root {
+	--primary-color: #3b4f3a;
+	--secondary-color: #f0f0ea;
+	--secondary-color2: #898b8e;
+}
+/* === fonts === */
+@font-face {
+	font-family: "Gochi Hand";
+	font-style: normal;
+	font-weight: 400;
+	src: url("../fonts/gochi-hand-v16-latin-regular.eot"); /* IE9 Compat Modes */
+	src: local(""),
+		url("../fonts/gochi-hand-v16-latin-regular.eot?#iefix")
+			format("embedded-opentype"),
+		/* IE6-IE8 */ url("../fonts/gochi-hand-v16-latin-regular.woff2")
+			format("woff2"),
+		/* Super Modern Browsers */
+			url("../fonts/gochi-hand-v16-latin-regular.woff") format("woff"),
+		/* Modern Browsers */ url("../fonts/gochi-hand-v16-latin-regular.ttf")
+			format("truetype"),
+		/* Safari, Android, iOS */
+			url("../fonts/gochi-hand-v16-latin-regular.svg#GochiHand") format("svg"); /* Legacy iOS */
+}
+
+/* font-family: 'Gochi Hand', cursive;
+font-family: 'Handlee', cursive; */
+
+/* ==========
+Main
+========== */
+main {
+	background-color: var(--primary-color);
+	padding: 2rem;
+	border: 0.2rem solid var(--secondary-color2);
+	border-bottom: 0.5rem solid var(--secondary-color2);
+	height: 50vh;
+}
+h2 {
+	font-size: 1.6rem;
+	margin-bottom: 0.7rem;
+}
+p:first-of-type {
+	font-size: 1rem;
+	margin-bottom: 1rem;
+}
+p {
+    font-size: 3rem;
+    display: inline-block;
+}
+p:nth-of-type(2) {
+    font-size: 1.3rem;
+}
+label {
+    font-size: 1rem;
+    display: block;
+}
+button {
+    margin-top: 1rem;
+    padding: .2rem 1rem;
+    border: none;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    font-family: "Gochi Hand";
+    font-size: 1rem;
+    transition: all 500ms ;
+    transition: scale 750ms;
+}
+button:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    scale: 1.1;
+}

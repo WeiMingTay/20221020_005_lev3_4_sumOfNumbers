@@ -16,6 +16,7 @@ body {
 	height: 100vh;
 	color: var(--secondary-color);
 	font-family: "Gochi Hand";
+	transition: padding 500ms;
 }
 :root {
 	--primary-color: #3b4f3a;
@@ -52,29 +53,47 @@ main {
 	padding: 2rem;
 	border: 0.2rem solid var(--secondary-color2);
 	border-bottom: 0.5rem solid var(--secondary-color2);
-	height: 50vh;
+	height: 70vh;
+	transition: height 750ms;
+	position: relative;
 }
 h2 {
-	font-size: 1.6rem;
+	font-size: 1.8rem;
 	margin-bottom: 0.7rem;
 }
 p:first-of-type {
-	font-size: 1rem;
+	font-size: 1.2rem;
 	margin-bottom: 1rem;
 }
 p {
-    font-size: 3rem;
+    font-size: 3.2rem;
     display: inline-block;
 }
 p:nth-of-type(2) {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 }
 label {
-    font-size: 1rem;
+    font-size: 1.2rem;
     display: block;
+	margin-top: .5rem;
+}
+input, select {
+	height: 2rem;
+	font-family: "Gochi Hand";
+	font-size: 1.5rem;
+	color: var(--secondary-color);
+	background-color: var(--primary-color);
+	border: none;
+	box-shadow: 0 0 2px 1px var(--secondary-color);
+	accent-color: var(--secondary-color2);
+}
+input {
+	padding-left: .3rem;
+	width: 100px;
 }
 button {
     margin-top: 1rem;
+	margin-bottom: 1rem;
     padding: .2rem 1rem;
     border: none;
     background-color: var(--secondary-color);
@@ -88,4 +107,34 @@ button:hover {
     background-color: var(--primary-color);
     color: var(--secondary-color);
     scale: 1.1;
+}
+a {
+	color: var(--primary-color);
+	background-color: var(--secondary-color);
+	font-size: 1rem;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	padding: .3rem;
+	text-decoration: none;
+	border-radius: 15px 0 0 0;
+}
+a:hover {
+	background-color: var(--primary-color);
+    color: var(--secondary-color);
+	border-top: 1px solid var(--secondary-color);
+	border-left: 1px solid var(--secondary-color);
+}
+
+
+@media (max-width: 700px) {
+	body {
+		padding: .5rem;
+	}
+	main {
+		height: 100%;
+	}
+	p:first-of-type {
+		font-size: 1rem;
+}
 }
